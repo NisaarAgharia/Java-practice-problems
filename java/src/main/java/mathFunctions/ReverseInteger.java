@@ -1,11 +1,11 @@
-package math;
+package mathFunctions;
 
-public class first {
+public class ReverseInteger {
 
     public static int reverseINT(int num) {
 
         int rev = 0;
-        while (num != 0) {
+        while (num != 1) {
             int LD = num % 10;
             rev = rev * 10 + LD;
             num = num / 10;

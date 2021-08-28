@@ -1,4 +1,4 @@
-package math;
+package mathFunctions;
 
 public class isPalindrome {
     public static void main(String[] args) {

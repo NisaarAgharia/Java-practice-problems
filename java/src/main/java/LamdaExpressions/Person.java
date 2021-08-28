@@ -1,4 +1,4 @@
-package java8;
+package LamdaExpressions;
 
 public class Person {
     String name;
