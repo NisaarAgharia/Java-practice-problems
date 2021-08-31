@@ -32,6 +32,13 @@ public class MainWrapper {
 
         long num = 2345;
         int num2 = (int)num;
+        Character c1 = new Character('C');
+        Boolean b = new Boolean(true);
+        Boolean b4 = new Boolean("SomeString");
+
+        Integer seven =
+                Integer.valueOf("111", 2);
+        System.out.println(seven);
 
         System.out.println(" "+val+" "+val2+" "+in+" "+num2);
     }
