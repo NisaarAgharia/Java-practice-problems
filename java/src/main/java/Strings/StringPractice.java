@@ -13,7 +13,16 @@ public class StringPractice {
             s3= s1+s2 +s3;
             System.out.println(s3);
         }*/
+        String str3 = "value1";
+        str3.concat("value2");
+        System.out.println( str3.getBytes());
+        System.out.println("Str 3 "+str3);
+        String concat = str3.concat("value2");
+        System.out.println("-->"+concat);
+        System.out.println(str3.concat("value2"));
 
+
+        // String Builder
 
         StringBuilder sb = new StringBuilder(s2);
         StringBuilder sba = new StringBuilder("3.3airawg");
