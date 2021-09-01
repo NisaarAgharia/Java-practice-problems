@@ -4,11 +4,15 @@ public class Hero  extends Actor{
 
 
     public void printDetails(){
-        System.out.println("Gero + "+this.toString());
+        System.out.println("Hero + "+this.toString());
     }
 
     public void act (){
         System.out.println("I am acting");
+    }
+
+    public void sing(){
+        System.out.println("Singing  from Actor");
     }
 
     public void act(int age,String Name){
