@@ -1,6 +1,6 @@
 package BasicsOOPS;
 
-public class Hero  extends Actor{
+public final class Hero  extends Actor{
 
 
     public void printDetails(){
@@ -17,5 +17,9 @@ public class Hero  extends Actor{
 
     public void act(int age,String Name){
         System.out.println("Acting from Hero");
+    }
+
+    public void flirt (){
+
     }
 }
