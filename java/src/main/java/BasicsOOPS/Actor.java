@@ -2,7 +2,7 @@ package BasicsOOPS;
 
 import java.util.Objects;
 
-public class Actor {
+public class Actor implements Showbiz{
    public String name;
    public int age;
    private int weight;
@@ -39,7 +39,16 @@ public class Actor {
         System.out.println("Acting from Actor");
     }
 
+    public void sing(){
+        System.out.println("Singing  from Actor");
+    }
+
     public void runner(){
         System.out.println("runner from Actor");
+    }
+
+    @Override
+    public void business() {
+
     }
 }
