@@ -7,10 +7,18 @@ public class InheritanceMain {
         Hero h = new Hero();
         Actor a = new Actor();
 
+        Actor ah = new Hero();
         h.act();
+        a.sing();
         a.printDetails();
-        a.act(12,"hasnanin");
-        h.act(1,"");
-        h.runner();
+        ah.sing();
+       // a.act(12,"hasnanin");
+      //  h.act(1,"");
+      //  h.runner();
+
+
+
+
+
     }
 }
