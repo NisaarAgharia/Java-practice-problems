@@ -1,6 +1,6 @@
 package Collections;
 
-public class Human {
+public class Human implements Comparable<Human>{
     String name;
     int age;
     height h;
@@ -21,5 +21,21 @@ public class Human {
                 ", h=" + h +
                 ", weight=" + weight +
                 '}';
+    }
+
+
+    @Override
+    public int compareTo(Human o) {
+
+        if (this.name.compareTo(o.name)>0)
+        {
+            return -1;
+        }
+        if (this.name.compareTo(o.name)<0)
+        {
+            return 1;
+        }
+        return 0;
+
     }
 }
