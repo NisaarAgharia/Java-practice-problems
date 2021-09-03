@@ -1,9 +1,6 @@
 package Collections;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class ArrayListCode {
     public static void main(String[] args) {
@@ -11,13 +8,18 @@ public class ArrayListCode {
 
         List<Integer> integer = new ArrayList<Integer>();
 
-        players.add("chin");
+        players.add("Sachin");
         players.add("Dravid");
+        players.add("dravi");
         players.add("dravi");
         players.add("Ganguly");
         players.add("Pointing");
+        players.add("dravi");
+        players.add(3,"lara");
 
         System.out.println(players.size());
+        System.out.println(players.indexOf("dravi"));
+        System.out.println(players.lastIndexOf("dravi"));
         Iterator <String> arrlist = players.iterator();
 
         while(arrlist.hasNext())
@@ -65,7 +67,7 @@ public class ArrayListCode {
         Iterator <Human> itr = famList.listIterator();
         while (itr.hasNext())
         {
-
+//famList.add(h4);
             Human itrHuman = itr.next();
             System.out.println(itrHuman);
         }
@@ -73,6 +75,11 @@ public class ArrayListCode {
 Collections.sort(famList,new HumanComparator());
         //System.out.println(famList);
 famList.forEach(s-> System.out.println(s));
+        System.out.println(famList.indexOf(h3));
+
+        Human[] humArray = new Human[5];
+      famList.toArray();
+        System.out.println(Arrays.toString(famList.toArray()));
 
 
     }
