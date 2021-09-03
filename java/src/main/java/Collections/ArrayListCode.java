@@ -3,6 +3,7 @@ package Collections;
 import java.util.*;
 
 public class ArrayListCode {
+    List<String> players = new ArrayList<String>();
     public static void main(String[] args) {
         List<String> players = new ArrayList<String>();
 
