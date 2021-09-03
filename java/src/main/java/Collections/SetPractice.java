@@ -84,7 +84,7 @@ public class SetPractice {
 
 
         Set<String> tree = new TreeSet<String>();
-        TreeSet<Human> treeset = new TreeSet<Human>();
+        TreeSet<Human> treeset = new TreeSet<Human>(new HumanComparator());
 
         tree.add("ls1");
         tree.add("ls1");
@@ -101,7 +101,7 @@ public class SetPractice {
         treeset.add(h4);
         treeset.add(h3);
         treeset.add(h2);
-        System.out.println(treeset);
+        System.out.println("TREESET "+treeset);
 
 
         TreeSet<Integer> treenum = new TreeSet<Integer>();
@@ -124,7 +124,9 @@ public class SetPractice {
         System.out.println("Higher 30  "+treenum.higher(30));
         System.out.println("TailSet 25 "+treenum.tailSet(25));
         System.out.println("Poll First "+treenum.pollFirst());
-        System.out.println("Poll Last  "+treenum.pollLast());
+        System.out.println("Poll Last  "+treenum.subSet(10,27));
+
+
        // System.out.println("Poll Last  "+treenum.);
         //System.out.println("Poll Last  "+treenum.pollLast());
         //System.out.println("Poll Last  "+treenum.pollLast());
