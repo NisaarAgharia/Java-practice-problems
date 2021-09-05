@@ -1,7 +1,7 @@
 # Java-practice-problems
-All Java Concepts code,  Java8, Java 11 code is Present in this repository
+All Java Concepts code, Java8, Java 11 code is Present in this repository
 
-## Code Present in this Repo contains Important Java Concepts like
+## Code Present contains Important Java Concepts like :
 
 ###### OOPS Concepts
 ###### Collections
