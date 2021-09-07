@@ -1,8 +1,6 @@
 package Collections;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 public class MapPractice {
     public static void main(String[] args) {
@@ -26,9 +24,15 @@ public class MapPractice {
         hm.put("Raziya",h3);
         hm.put("Nisaar",h4);
         hm.put("Hasnain",h1);
-        hm.put("Nisaar",h3);
+       // hm.put("Nisaar",h3);
 
-        System.out.println(hm);
+
+        for (Map.Entry<String, Human> entry: hm.entrySet())
+        {
+            System.out.println("Key - " + entry.getKey());
+            System.out.println("Value - "+ entry.getValue());
+        }
+      //  System.out.println(hm);
 
 
 
@@ -45,9 +49,45 @@ public class MapPractice {
         alpha.put("f",2);
         alpha.put("C",3);
         alpha.put("l",4);
+        alpha.put("n",4);
         alpha.put("r",5);
         alpha.put("z",6);
         alpha.put("Z",7);
+
+        for (String s:alpha.keySet())
+        {
+            System.out.println(s);
+        }
+
+        for (Integer s:alpha.values())
+        {
+            System.out.println(s);
+        }
+
+        Iterator<Integer> itr = alpha.values().iterator();
+        while(itr.hasNext())
+        {
+            if (itr.next()==4)
+            {
+                itr.remove();
+            }
+        }
+     alpha.forEach((s,k)-> System.out.println("Remaining values - "+s));
+
+
+
+
+        Iterator <Human> HMitr =  hm.values().iterator();
+        System.out.println("Human prev" + hm.size());
+        while (HMitr.hasNext())
+        {
+           if( HMitr.next().age==27)
+           {
+               HMitr.remove();
+           }
+        }
+        System.out.println("Human" + hm.size());
+
 
         TreeMap<String,Integer> hei = new TreeMap<String,Integer>(alpha);
         System.out.println(hei.floorEntry("p"));
