@@ -15,6 +15,7 @@ public class lambdas {
         //System.out.println(Arrays.stream(p).filter(age->age.age==24).count());
         //   Arrays.stream(p).filter(age->age.age==24).forEach(System.out::println);
 
+
        List<Person> li = Arrays.asList(p);
         li.stream().filter(a->a.name.equals("Nisaar")).forEach(System.out::println);
         //  li.stream().filter(a->a.name.equals("Nisaar")).collect(Collectors.toMap(1,2)).forEach(System.out::println);
