@@ -1,5 +1,8 @@
+
 # Java-practice-problems
-All Java Concepts code, Java8, Java 11 code is Present in this repository
+
+Core Java Concepts, Java8, Java 11, Multithreading, Functional Programming is Present in this repository
+
 
 ## Code Present contains Important Java Concepts like :
 
