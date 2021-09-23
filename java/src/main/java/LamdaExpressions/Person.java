@@ -15,7 +15,7 @@ public class Person {
         return name;
     }
 
-    public void setName(String name) {
+    public void Name(String name) {
         this.name = name;
     }
 
@@ -23,7 +23,7 @@ public class Person {
         return age;
     }
 
-    public void setAge(int age) {
+    public void Age(int age) {
         this.age = age;
     }
 
@@ -31,7 +31,7 @@ public class Person {
         return height;
     }
 
-    public void setHeight(float height) {
+    public void Height(float height) {
         this.height = height;
     }
 

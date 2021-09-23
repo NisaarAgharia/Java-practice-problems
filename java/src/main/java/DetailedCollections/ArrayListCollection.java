@@ -80,7 +80,7 @@ public class ArrayListCollection {
         System.out.println(empList);
 
 
-        Collections.sort(empList,new EmpComparator());
+      //  Collections.sort(empList,new EmpComparator());
         System.out.println(empList);
         Collections.reverse(empList);
 
