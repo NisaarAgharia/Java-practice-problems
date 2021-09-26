@@ -1,0 +1,42 @@
+package DetailedCollections;
+
+import java.util.*;
+
+public class HashSetCollection {
+
+
+    public static void main(String[] args) {
+
+        ArrayList<Integer> arrList = new ArrayList<Integer>(10);
+        arrList.add(1);
+        arrList.add(2);
+        arrList.add(1);
+        arrList.add(2);
+        arrList.add(1);
+
+        Set<Integer> set  =  new HashSet<>(arrList);
+        System.out.println(set);
+
+
+
+
+        HashSet <Employee>empSet = new HashSet<Employee>();
+
+        Employee firstEmployee = new Employee(011, "Nisaar", "Mumbai Maharashtra", 85);
+        Employee sixthEmployee = new Employee(012, "Nisaar", "Mumbai Maharashtra", 85);
+        Employee secondEmployee = new Employee(102, "Sharif", "Sherpura Gujarat", 66);
+        // Date rohanDOB = new Date(1994,02,23);
+        Calendar rohancal = Calendar.getInstance();
+        rohancal.set(1993, 02, 22);
+        Date rohanDOB = rohancal.getTime();
+        Employee thirdEmployee = new Employee(105, "Rohan", "Pune Maharashtra", rohanDOB, 75);
+
+
+        empSet.add(firstEmployee);
+        empSet.add(secondEmployee);
+        empSet.add(thirdEmployee);
+        System.out.println( empSet.add(sixthEmployee));
+
+        System.out.println(empSet.size());
+    }
+}
