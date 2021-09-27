@@ -1,7 +1,7 @@
 
 # Java-practice-problems
 
-Core Java Concepts, Java8, Java 11, Multithreading, Functional Programming is Present in this repository
+Data Structures, Core Java Concepts, Java8+, Multithreading, Functional Programming, Algorithms
 
 
 ## Code Present contains Important Java Concepts like :
