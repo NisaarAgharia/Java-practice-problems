@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-public class Employee implements Serializable {
+public class Employee implements Serializable,Comparable<Employee> {
     private int empID;
     private String empName;
     private String empAddress;
@@ -97,6 +97,20 @@ public class Employee implements Serializable {
                 ", empDOB=" + empDOB +
                 ", Weight=" + Weight +
                 '}';
+    }
+
+
+
+    public int compareTo(Employee o) {
+        if(this.getWeight()>o.getWeight())
+        {
+            return -1;
+        }
+        if (this.getWeight()<o.getWeight()){
+            return 1;
+        }
+        else
+            return 0;
     }
 
 
