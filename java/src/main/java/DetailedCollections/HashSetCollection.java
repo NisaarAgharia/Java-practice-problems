@@ -38,5 +38,22 @@ public class HashSetCollection {
         System.out.println( empSet.add(sixthEmployee));
 
         System.out.println(empSet.size());
+
+        empSet.iterator().forEachRemaining(e-> System.out.println(e));
+
+        System.out.println(empSet.toArray().length);
+
+        HashSet <String>  hs = new HashSet<String>();
+        hs.add(" ");
+        hs.add("i");
+        hs.add("am");
+        hs.add("a");
+        hs.add("Bad");
+        hs.add("Boy");
+        hs.stream().forEach(e-> System.out.println(e));
+
+        ArrayList <ArrayList<Integer>> al = new ArrayList <ArrayList<Integer>> ();
+        al.add(1,arrList);
+
     }
 }
