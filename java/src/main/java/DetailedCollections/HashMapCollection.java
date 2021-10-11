@@ -11,6 +11,7 @@ public class HashMapCollection {
 map.put(1,"One");
 map.put(2,"Two");
 
+
         Set s = map.entrySet();
         System.out.println(s);
         for(Map.Entry m : map.entrySet())
