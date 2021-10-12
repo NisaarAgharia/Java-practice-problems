@@ -121,7 +121,7 @@ public class DLinkedList  {
 
     void deleteNode(Node del){
         //base case
-        if(head ==null || del ==null)
+        if(head ==null || del == null)
         {
             return;
         }
@@ -198,8 +198,6 @@ public class DLinkedList  {
         dll.deleteNodeByKey(dll,30);
         dll.deleteNodeByKey(dll,20);
         //dll.deleteNodeByKey(dll,10);
-
-
         dll.printList(dll.head);
     }
 }
